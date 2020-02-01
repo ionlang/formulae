@@ -18,8 +18,8 @@ Legend:
 * 👍 Mostly completed.
 * ✍️ In progress.
 
-| Feature      | Status             |   |   |   |
-|--------------|--------------------|---|---|---|
-| Lexer        | 👍 Mostly completed |   |   |   |
-| Parser       | ✍️ In progress      |   |   |   |
-| Symbol table | ✍️ In progress      |   |   |   |
+| Feature      | Status             |
+|--------------|--------------------|
+| Lexer        | 👍 Mostly completed |
+| Parser       | ✍️ In progress      |
+| Symbol table | ✍️ In progress      |
