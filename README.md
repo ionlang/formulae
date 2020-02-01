@@ -10,16 +10,11 @@ Collection of compiler tools and utilities.
 
 * **Tracking**: Scope data structures and symbol table implementation.
 
-#### Feature table
+#### Individual features
 
-Legend:
-
-* ✔️ Completed.
-* 👍 Mostly completed.
-* ✍️ In progress.
-
-| Feature      | Status             |
-|--------------|--------------------|
-| Lexer        | 👍 Mostly completed |
-| Parser       | ✍️ In progress      |
-| Symbol table | ✍️ In progress      |
+| Feature                                    | Status             |
+|--------------------------------------------|--------------------|
+| Lexer: Generic implementation              | 👍 Mostly completed |
+| Lexer: Ability to supply lexme rules       | ✍️ In progress      |
+| Parser: Generic recursive parsing strategy | ✍️ In progress      |
+| Symbol table: Scoping                      | ✍️ In progress      |
