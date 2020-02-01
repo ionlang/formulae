@@ -56,7 +56,7 @@ add_definitions(${LLVM_DEFINITIONS})
 
 # Set source files.
 file(
-    GLOB_RECURSE SOURCES "include/ioncommon/*.h" "src/*.cpp" "src/*.h"
+    GLOB_RECURSE SOURCES "include/formulae/*.h" "src/*.cpp" "src/*.h"
 )
 
 # Specify that this project is a library.

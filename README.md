@@ -1,3 +1,3 @@
-#### ioncommon
+#### formulae
 
-Common helper classes and utilities.
+Collection of compiler tools and utilities
