@@ -14,7 +14,7 @@ Collection of compiler tools and utilities.
 
 | Feature                                    | Status             |
 |--------------------------------------------|--------------------|
-| Lexer: Generic implementation              | 👍 Mostly completed |
-| Lexer: Ability to supply lexme rules       | ✍️ In progress      |
-| Parser: Generic recursive parsing strategy | ✍️ In progress      |
-| Symbol table: Scoping                      | ✍️ In progress      |
+| **Lexer**: Generic implementation              | 👍 Mostly completed |
+| **Lexer**: Ability to supply lexme rules       | ✍️ In progress      |
+| **Parser**: Generic recursive parsing strategy | ✍️ In progress      |
+| **Symbol table**: Scoping                      | ✍️ In progress      |
