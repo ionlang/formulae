@@ -1,12 +1,12 @@
 # General project settings.
 cmake_minimum_required(VERSION 3.12.4)
-project(ioncommon VERSION 1.0.0 LANGUAGES CXX)
+project(formulae VERSION 1.0.0 LANGUAGES CXX)
 
 # Setup compiler flag(s) & standard(s).
 set(CMAKE_CXX_STANDARD 17)
 
 # General project information.
-set(PROJECT_URL "https://github.com/ionlang/ioncommon")
+set(PROJECT_URL "https://github.com/ionlang/formulae")
 
 # Setup source and build directories.
 set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
@@ -60,7 +60,7 @@ file(
 )
 
 # Specify that this project is a library.
-add_library("${PROJECT_NAME}" ${SOURCES} src/passes/semantic/name_resolution_pass.cpp)
+add_library("${PROJECT_NAME}" ${SOURCES})
 
 # Link .libs (same functionality handled by llvm_map_components_to_libnames().)
 #target_link_libraries(${PROJECT_NAME} ${LIB_SOURCES})

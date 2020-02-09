@@ -1,5 +1,9 @@
 #pragma once
 
+#define UnknownTokenType -1
+
+#include <regex>
+#include <vector>
 #include <string>
 #include <optional>
 
@@ -96,7 +100,7 @@ namespace formulae {
             }
 
             // Set the initial Token buffer as Unknown.
-            Token token = Token(TokenKind::Unknown, this->getCharAsString(), this->index);
+            T token = T(UnknownTokenType, this->getCharAsString(), this->index);
 
             // Abstract the Token's value for easier access.
             std::string tokenValue = token.getValue();
@@ -172,9 +176,9 @@ namespace formulae {
             this->begin();
 
             // TODO: Should be a list, then converted to a vector?
-            std::vector<Token> tokens = {};
+            std::vector<T> tokens = {};
 
-            std::optional<Token> token;
+            std::optional<T> token;
 
             while (this->hasNext()) {
                 token = this->tryNext();
@@ -185,7 +189,7 @@ namespace formulae {
                 }
 
                 // Display a warning if the token's type is unknown.
-                if (token->getKind() == TokenKind::Unknown) {
+                if (token->getKind() == UnknownTokenType) {
                     // TODO: Issue warning instead of plain std::cout.
                     std::cout << "Warning: Unknown token encountered" << std::endl;
                 }
