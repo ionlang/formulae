@@ -18,18 +18,24 @@ namespace formulae {
         size_t index;
 
     protected:
-        char getChar() const {
+        std::optional<char> getChar() const {
             // Return null character if reached end of input.
             if (!this->hasNext()) {
-                return '\0';
+                return std::nullopt;
             }
 
             // Otherwise, return the corresponding character.
             return this->input[this->index];
         }
 
-        std::string getCharString() const {
-            return std::string(1, this->getChar());
+        std::optional<std::string> getCharString() const {
+            std::optional<char> currentChar = this->getChar();
+
+            if (!currentChar.has_value()) {
+                return std::nullopt;
+            }
+
+            return std::string(1, *currentChar);
         }
 
         size_t getLength() const {
